@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CheckBoxSample" />
-        <activity android:name=".RadioChoiceSample"/>
+        <activity android:name=".RadioChoiceSample" />
+        <activity android:name=".DescriptiveSample"></activity>
     </application>
 
 </manifest>

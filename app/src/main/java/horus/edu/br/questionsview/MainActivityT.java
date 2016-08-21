@@ -29,4 +29,9 @@ public class MainActivityT extends AppCompatActivity {
         Intent act = new Intent(this, RadioChoiceSample.class);
         startActivity(act);
     }
+
+    public void descriptiveViewClick(View view) {
+        Intent act = new Intent(this, DescriptiveSample.class);
+        startActivity(act);
+    }
 }
