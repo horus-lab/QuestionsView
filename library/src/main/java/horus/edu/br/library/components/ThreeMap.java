@@ -1,13 +1,11 @@
 package horus.edu.br.library.components;
 
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -124,6 +122,10 @@ public class ThreeMap<K, V, R> {
     @Override
     public int hashCode() {
         return values.hashCode();
+    }
+
+    public int getIndex(EntrySet q) {
+        return values.indexOf(q);
     }
 
     public class EntrySet {
