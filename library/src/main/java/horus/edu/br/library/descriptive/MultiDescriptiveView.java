@@ -4,12 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import horus.edu.br.library.components.L;
 import horus.edu.br.library.components.ThreeMap;
@@ -54,13 +50,6 @@ public class MultiDescriptiveView extends LinearLayout {
             text.setHint(q.getTitle());
             addView(text);
             LinearLayout.LayoutParams layoutParams = (LayoutParams) text.getLayoutParams();
-            text.setOnKeyListener(new OnKeyListener() {
-                @Override
-                public boolean onKey(View view, int i, KeyEvent keyEvent) {
-                    L.i(((EditText) view).getText().toString());
-                    return true;
-                }
-            });
             layoutParams.setMargins(3, 2, 3, 10);
         }
     }
